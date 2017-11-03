@@ -6,7 +6,7 @@ AUTHOR = 'Henk'
 SITENAME = '~/hgrif'
 SITEURL = ''
 
-THEME='/Users/henkgriffioen/projects/pelican-themes/pelican-simplegrey/'
+THEME = '../pelican-simplegrey'
 
 PATH = 'content'
 
@@ -28,7 +28,7 @@ STATIC_PATHS = ['images']
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-PLUGIN_PATHS = ['./plugins']
+PLUGIN_PATHS = ['./pelican-plugins']
 #PLUGINS = ["latex"]
 PLUGINS = ['render_math']
 #PLUGINS = ["pelican.plugins.latex"]

@@ -1,6 +1,7 @@
 Title: How to start a Data Science project in Python
 Date: 2017-02-26
 Category: Blogs
+Summary: A lot of blog posts are written on the complicated Data Science-y stuff but not so many posts talk about the simple stuff.  A simple but very important topic is how to start and structure your projects.  This post gives a few pointers for setting up your projects.
  
 
 A lot of blog posts are written on the complicated Data Science-y stuff but not so many posts talk about the simple stuff.
