@@ -7,7 +7,6 @@ website:
     left:
       - projects.qmd
       - posts.qmd
-      - resume.qmd
 
 format:
   html:
