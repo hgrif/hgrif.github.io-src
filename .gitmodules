@@ -1,6 +1,0 @@
-[submodule "output"]
-	path = output
-	url = git@github.com:hgrif/hgrif.github.io.git
-[submodule "plugins"]
-	path = plugins
-	url = https://github.com/getpelican/pelican-plugins.git
