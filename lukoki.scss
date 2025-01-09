@@ -1,0 +1,114 @@
+/*-- scss:defaults --*/
+// quarto-scss-analysis-annotation { "origin": "lukoki" }
+// Theme adapted from https://stephango.com/flexoki
+
+$theme: "lukoki" !default;
+
+//
+// Color system
+//
+
+
+$white:     #FFFCF0 !default;
+$gray-50:   #F2F0E5 !default;
+$gray-100:  #E6E4D9 !default;
+$gray-150:  #DAD8CE !default;
+$gray-200:  #CECDC3 !default;
+$gray-300:  #B7B5AC !default;
+$gray-400:  #9F9D96 !default;
+$gray-500:  #878580 !default;
+$gray-600:  #6F6E69 !default;
+$gray-700:  #575653 !default;
+$gray-800:  #403E3C !default;
+$gray-850:  #343331 !default;
+$gray-900:  #282726 !default;
+$gray-950:  #1C1B1A !default;
+$black:     #100F0F !default;
+
+$blue:    #205EA6 !default;
+$purple:  #5E409D !default;
+$pink:    #e83e8c !default; //
+$red:     #AF3029 !default;
+$orange:  #BC5215 !default;
+$yellow:  #AD8301 !default;
+$green:   #66800B !default;
+$teal:    #20c997 !default; //
+$cyan:    #9954bb !default; //
+
+$primary:       $white !default;
+$secondary:     $gray-800 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$min-contrast-ratio:   2.6 !default;
+
+// Options
+
+$enable-rounded: false !default;
+
+// Body
+
+$body-color:    $gray-800 !default;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:    "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$headings-font-weight:      400 !default;
+
+// Navbar
+
+$navbar-dark-hover-color:       rgba($white, 1) !default;
+$navbar-light-hover-color:      rgba($black, .9) !default;
+
+// Alerts
+
+$alert-border-width:            0 !default;
+
+// Progress bars
+
+$progress-height:               .5rem !default;
+
+
+
+/*-- scss:rules --*/
+
+
+// Variables
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" !default;
+@if $web-font-path {
+  @import url($web-font-path);
+}
+
+// Typography
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+// Indicators
+
+.badge {
+  &.bg-light {
+    color: $dark;
+  }
+}
+
+// Progress bars
+
+.progress {
+  @include box-shadow(none);
+
+  .progress-bar {
+    font-size: 8px;
+    line-height: 8px;
+  }
+}
+
+
+// quarto-scss-analysis-annotation { "origin": null }
