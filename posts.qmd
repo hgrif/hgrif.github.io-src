@@ -44,4 +44,7 @@ listing:
   type: default # or `default` or `table`; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
   feed: true
+  fields: [date, title]
+  page-size: 1000
+
 ---
