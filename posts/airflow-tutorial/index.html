@@ -272,7 +272,7 @@ $ export AIRFLOW_HOME="$(pwd)"</code></pre>
 </section>
 <section id="configure-common-settings" class="level4">
 <h4 class="anchored" data-anchor-id="configure-common-settings">Configure common settings</h4>
-<div id="31db9a2d" class="cell">
+<div id="1bad21e2" class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>default_args <span class="op">=</span> {</span>
@@ -288,7 +288,7 @@ $ export AIRFLOW_HOME="$(pwd)"</code></pre>
 <h4 class="anchored" data-anchor-id="create-the-dag">Create the DAG</h4>
 <p>We’ll now create a DAG object that will contain our tasks.</p>
 <p>Name it <code>airflow_tutorial_v01</code> and pass <code>default_args</code>:</p>
-<div id="cac3c852" class="cell">
+<div id="d2f53f9b" class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> airflow <span class="im">import</span> DAG</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> DAG(<span class="st">'airflow_tutorial_v01'</span>,</span>
@@ -308,7 +308,7 @@ $ export AIRFLOW_HOME="$(pwd)"</code></pre>
 <h4 class="anchored" data-anchor-id="create-the-tasks">Create the tasks</h4>
 <p>Tasks are represented by operators that either perform an action, transfer data, or sense if something has been done. Examples of actions are running a bash script or calling a Python function; of transfers are copying tables between databases or uploading a file; and of sensors are checking if a file exists or data has been added to a database.</p>
 <p>We’ll create a workflow consisting of three tasks: we’ll print ‘hello’, wait for 10 seconds and finally print ‘world’. The first two are done with the <code>BashOperator</code> and the latter with the <code>PythonOperator</code>. Give each operator an unique task ID and something to do:</p>
-<div id="b93eb940" class="cell">
+<div id="ce2b794c" class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> airflow.operators.bash_operator <span class="im">import</span> BashOperator</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> airflow.operators.python_operator <span class="im">import</span> PythonOperator</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -324,11 +324,11 @@ $ export AIRFLOW_HOME="$(pwd)"</code></pre>
 </div>
 <p>Note how we can pass bash commands in the <code>BashOperator</code> and that the <code>PythonOperator</code> asks for a Python function that can be called.</p>
 <p>Dependencies in tasks are added by setting other actions as upstream (or downstream). Link the operations in a chain so that <code>sleep</code> will be run after <code>print_hello</code> and is followed by <code>print_world</code>; <code>print_hello</code> -&gt; <code>sleep</code> -&gt; <code>print_world</code>:</p>
-<div id="1cbe9fa5" class="cell">
+<div id="0b7024c3" class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>print_hello <span class="op">&gt;&gt;</span> sleep <span class="op">&gt;&gt;</span> print_world</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After rearranging the code your final DAG should look something like:</p>
-<div id="97373bf8" class="cell">
+<div id="1217920a" class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> airflow <span class="im">import</span> DAG</span>
@@ -497,7 +497,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/hgrif\.github\.io\/hgrif\.github\.io-src\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
