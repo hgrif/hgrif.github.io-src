@@ -3,40 +3,40 @@ title: "Writing"
 listing:
   contents:
     - path: https://pages.xebia.com/data-and-ai/mlops-whitepaper
-      title: "Whitepaper: MLOps Beyond the Hype [xebia.com]"
+      title: "Whitepaper: MLOps Beyond the Hype"
       date: "2024-04-01"
       categories: [mlops]
     - path: https://xebia.com/blog/how-to-measure-your-mlops-performance/
-      title: "How to Measure Your MLOps Performance [xebia.com]"
+      title: "How to Measure Your MLOps Performance"
       date: "2023-11-20"
       categories: [mlops]
     - path: https://xebia.com/blog/tutorial-for-dbt-analytics-engineering-made-easy/
-      title: "dbt tutorial: analytics engineering made easy [xebia.com]"
+      title: "dbt tutorial: analytics engineering made easy"
       date: "2020-02-12"
       categories: [dbt, analytics engineering, bigquery]
     - path: https://xebia.com/blog/rhyme-with-ai/
-      title: "Rhyme with AI [xebia.com]"
+      title: "Rhyme with AI"
       date: "2020-02-08"
       categories: [data science, nlp, llm, bert]
     - path: https://xebia.com/blog/fairness-in-ai-dutch-data-science-week-2019/
-      title: "Fairness in AI [xebia.com]"
+      title: "Fairness in AI"
       date: "2019-07-23"
       categories: [data science, fairness]
     - path: https://xebia.com/blog/write-less-terrible-code-with-jupyter-notebook/
-      title: "Write less terrible code with Jupyter Notebook [xebia.com]"
+      title: "Write less terrible code with Jupyter Notebook"
       date: "2018-08-05"
     - path: https://xebia.com/blog/fairness-in-machine-learning-with-pytorch/
-      title: "Fairness in Machine Learning with PyTorch [xebia.com]"
+      title: "Fairness in Machine Learning with PyTorch"
       date: "2018-05-22"
     - path: https://pages.xebia.com/the-analytics-translator-whitepaper
-      title: "Whitepaper: Analytics Translator [xebia.com]"
+      title: "Whitepaper: Analytics Translator"
       date: "2019-04-01"
     - path: https://xebia.com/blog/apache-airflow-tutorial-for-data-pipelines/
-      title: "Apache Airflow Tutorial for Data Pipelines [xebia.com]"
+      title: "Apache Airflow Tutorial for Data Pipelines"
       date: "2017-08-11"
       categories: [data engineering, airflow]
     - path: https://xebia.com/blog/tutorial-for-dbt-analytics-engineering-made-easy/
-      title: "How to Start a Data Science Project in Python [xebia.com]"
+      title: "How to Start a Data Science Project in Python"
       date: "2017-03-01"
       categories: [python, data science]
 

@@ -11,8 +11,10 @@ website:
 format:
   html:
     theme:
-      - default
-      - lukoki.scss
+    # https://quarto.org/docs/output-formats/html-themes.html#theme-options
+      light: flexoki.scss
+      dark: [flexoki.scss, flexoki-dark.scss]
+
     css: styles.css
     toc: true
 
